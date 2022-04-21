@@ -1,0 +1,10 @@
+name: PotatoHeads
+version: 1.0.0
+main: main.main
+
+commands:
+  givehead:
+    description: give player heads
+    aliases: [gh]
+    permission: potatoheads.givehead
+    usage: /givehead [player]
