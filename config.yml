@@ -1,0 +1,2 @@
+# If this option is enabled, the player who killed another player will be given the head of the killed one.
+EnableDropPlayerHeads: true
