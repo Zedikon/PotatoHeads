@@ -14,6 +14,6 @@ public class main extends JavaPlugin {
 	}
 	
 	public void onDisable() {
-		Bukkit.getLogger().info("PotatoHeads enable!");
+		Bukkit.getLogger().info("PotatoHeads disable!");
 	}
 }

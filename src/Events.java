@@ -15,11 +15,15 @@ public class Events implements Listener{
 	
 	@EventHandler
 	public void pd(PlayerDeathEvent e) {
+		// check, enable this function or no
 		Boolean s = plugin.getConfig().getBoolean("EnableDropPlayerHeads");
 		if(s == true) {
+			// trying give killer, player head
 			try {
 				Player player = e.getEntity();
 				Player killer = player.getKiller();
+				String killername = killer.getName(); String playerhead = player.getName();
+				api.givehead(killername, playerhead);
 				Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "give " + killer.getName() + " player_head{SkullOwner: " + "\"" + player.getName() + "\"" + "}");
 			} catch (Exception ignore) { }
 		}
