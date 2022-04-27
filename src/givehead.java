@@ -26,7 +26,6 @@ public class givehead implements CommandExecutor{
 				
 				String playername = p.getName(); String playerhead = args[0];
 				api.givehead(playername, playerhead);
-				// Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "give " + p.getName() + " player_head{SkullOwner: " + "\"" + args[0] + "\"" + "}");
 				return true;
 			}
 			// give player him head

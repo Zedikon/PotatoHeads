@@ -15,10 +15,10 @@ public class Events implements Listener{
 	
 	@EventHandler
 	public void pd(PlayerDeathEvent e) {
-		// check, enable this function or no
+		// check enable this function or no
 		Boolean s = plugin.getConfig().getBoolean("EnableDropPlayerHeads");
 		if(s == true) {
-			// trying give killer, player head
+			// trying give killer player head
 			try {
 				Player player = e.getEntity();
 				Player killer = player.getKiller();
